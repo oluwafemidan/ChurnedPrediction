@@ -1,0 +1,68 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<form id="inputForm" style="text-align: center;">
+    <input type="file" name="file">
+    <div>
+        <button type="button" class="btn btn-info" onclick="getResult()" style="cursor: pointer;">Submit</button>
+    </div>
+</form>
+<div class="row" id="result">
+    <table id="datasetTable" style="display:none;">
+        <thead>
+            <tr id="tableHead">
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<script>
+  function getResult() {
+    var form_data = new FormData($('#inputForm')[0]);
+    $.ajax({
+      type: 'POST',
+      url: '/predict',
+      data: form_data,
+      contentType: false,
+      cache: false,
+      processData: false,
+      success: function(data) {
+        // Parse the JSON data received from Flask API
+        var jsonData = JSON.parse(data);
+
+        // Extract columns, index, and data from the JSON object
+        var columns = jsonData.columns;
+        var index = jsonData.index;
+        var dataArray = jsonData.data;
+
+        // Create an HTML table structure
+        var tableHtml = '<table border="1">';
+        
+        // Add table headers
+        tableHtml += '<tr>';
+        columns.forEach(function(column) {
+          tableHtml += '<th style="background-color: cyan;">' + column + '</th>';
+        });
+        tableHtml += '</tr>';
+
+        // Add table rows
+        dataArray.forEach(function(row, rowIndex) {
+          tableHtml += '<tr>';
+          tableHtml += '<td>' + index[rowIndex] + '</td>'; // Add index as the first column
+          row.forEach(function(cell) {
+            tableHtml += '<td>' + cell + '</td>';
+          });
+          tableHtml += '</tr>';
+        });
+
+        // Close the table
+        tableHtml += '</table>';
+
+        // Display the table in the #result div
+        $('#result').html(tableHtml);
+
+        // Set the document title
+        document.title = "Prediction of Churned Customers";
+      },
+    });
+  }
+</script>
