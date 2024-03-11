@@ -5,7 +5,7 @@
   * [Overview](#overview)
   * [Installation](#installation)
   * [Run](#run)
-  * [Deployement on Heroku](#deployement-on-heroku)
+  * [Deployement on Docker](#deployement-on-docker)
   * [Directory Tree](#directory-tree)
   * [License](#license)
   * [Credits](#credits)
@@ -50,6 +50,40 @@ pip install -r req.txt
 # Finally run the following command
 python app.py
 ```
+## Deployement on Docker
+ ### Pre-requisites      
+ 1. System should have [docker engine](https://docs.docker.com/install/) installed.      
+     
+ ### Hosting the web service      
+ 1. Build the docker image       
+```bash
+docker build -t churned_predimg:v1 .  
+```   
+2. Check the image       
+```bash 
+docker images 
+``` 
+<p align="center">          
+  <img src="/docs/images/mpws-01.png" alt="Docker Images">          
+</p>          
+    
+3. Run the container      
+```bash
+docker run -dp 8080:5000 -ti --name mlContainer churned_predimg:v1
+```    
+    
+4. Check whether the container is up       
+```bash 
+docker ps 
+``` 
+<p align="center">          
+  <img src="/docs/images/mpws-02.png" alt="Running Containers">          
+</p>          
+      
+      
+>When we run the container two scripts are initiated:  
+>1. `app.py` which hosts the model as a web service.      
+ ---      
 
 Now,
 ```bash
