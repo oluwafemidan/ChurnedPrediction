@@ -8,7 +8,7 @@
   * [Deployement on Docker](#deployement-on-docker)
   * [Directory Tree](#directory-tree)
   * [License](#license)
-  * [Credits](#credits)
+  
 
 ## Demo
 Demo Screenshot: ![Screenshot](https://private-user-images.githubusercontent.com/146761013/311536571-ff17d456-f8e7-4ae8-8df2-9905f2e501c9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAwOTY1NTIsIm5iZiI6MTcxMDA5NjI1MiwicGF0aCI6Ii8xNDY3NjEwMTMvMzExNTM2NTcxLWZmMTdkNDU2LWY4ZTctNGFlOC04ZGYyLTk5MDVmMmU1MDFjOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMxMFQxODQ0MTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01OTMyOTgyMzdmMTVhNjc3MDRmYTc0Y2FhZWRhZDBkZTIzOTM2YTc3NDQ5MThlNGI1YmZiNTA3OWVjYWQ2NzAyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.8OSN95crJeElJ2XWP7FtH7j5wp7PLnxKG6I623ivL3A)
@@ -105,5 +105,25 @@ docker ps
 └── requirements.txt
 ```
 
+## License
 
 
+Copyright (c) 2024 Ajala Oluwafemi daniel
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
