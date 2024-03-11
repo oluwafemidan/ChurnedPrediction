@@ -50,6 +50,10 @@ pip install -r req.txt
 # Finally run the following command
 python app.py
 ```
+Now,
+```bash
+open up you local host and port
+```
 ## Deployement on Docker
  ### Pre-requisites      
  1. System should have [docker engine](https://docs.docker.com/install/) installed.      
@@ -85,7 +89,21 @@ docker ps
 >1. `app.py` which hosts the model as a web service.      
  ---      
 
-Now,
-```bash
-open up you local host and port
+## Directory Tree 
 ```
+├── .vscode 
+├── churned_pred
+    ├── test.csv  
+├── envname
+├── flaskapi
+├── .dockerignore
+├── Dockerfile
+├── README.md
+├── Telecom_Churned.ipynb
+├── log_model.pkl
+├── req.txt
+└── requirements.txt
+```
+
+
+
