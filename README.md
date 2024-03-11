@@ -21,3 +21,37 @@ The Code is written in Python 3.9. If you don't have Python installed you can fi
 ```bash
 pip install -r req.txt
 ```
+## Run
+### STEPS:
+
+Clone the repository
+
+```bash
+https://github.com/oluwafemidan/ChurnedPrediction.git
+```
+### STEP 01- Launch Anaconda Prompt Command after opening the repository
+Copy the directory from the resipository and paste it on the Anaconda prompt
+
+```bash
+C:\Users\HP 2022\OneDrive\projects\Telecomm deployment with Docker
+```
+Input `cd` and `flask` in the prompt command
+```bash
+cd flask
+```
+
+
+### STEP 02- install the requirements
+```bash
+pip install -r req.txt
+```
+
+```bash
+# Finally run the following command
+python app.py
+```
+
+Now,
+```bash
+open up you local host and port
+```
